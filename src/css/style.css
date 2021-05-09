@@ -281,6 +281,60 @@ nav{
    
 
 }
+/* POP-up */
+.popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.5);
+    
+}
+.pop-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.closeBtn{
+    color: black;
+    float: right;
+    font-size: 40px;
+}
+.closeBtn:hover,.closeBtn:focus{
+    color: var(--light);
+    text-decoration: none;
+    cursor: pointer;
+}
+.fifty {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--light);
+}
+.fifty-text {
+    color: var(--light);
+    font-size: 30px;
+    text-align: center;
+}
+@media(min-width: 850px){
+    .pop-content{
+        width: 40%;
+    }
+    .fifty {
+        font-size: 100px;
+    }
+    .fifty-text {
+        font-size: 50px;
+    }
+}
+
+
 /* Main content Mobile First*/
 /* Styling for contact buttons thoughtout pages */
 strong{

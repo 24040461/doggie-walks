@@ -24,3 +24,18 @@ document.getElementById("box3-btn").onclick = function () {
     location.href = "/src/pages/services.html";
 };
 
+// Pop up moodal
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+closeBtn.addEventListener('click', closePopup);
+window.addEventListener('click', clickOutside);
+
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+function clickOutside(evt){
+    if(evt.target == popup){
+     popup.style.display = 'none';
+    }
+}
